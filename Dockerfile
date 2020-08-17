@@ -7,7 +7,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime
 
 RUN apt-get update
 
-RUN apt-get install -y curl cups avahi-daemon && \
+RUN apt-get install -y curl cups cups-pdf avahi-daemon && \
     apt-get clean && \
     find /var/lib/apt/lists -type f -delete
 
